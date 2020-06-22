@@ -35,7 +35,31 @@
       </rdfs:comment>
       <rdfs:subClassOf rdf:resource="&drb;zip"/>
       <drb:signature rdf:parseType="Resource">
-         <drb:nameMatch>SM_(TEST|OPER|REPR)_.........._[0-9]{8}T[0-9]{6}_[0-9]{8}T[0-9]{6}_[0-9]{3}_[0-9]{3}_[0-9]{1}\.zip</drb:nameMatch>
+         <drb:nameMatch>SM_(TEST|OPER|REPR)_(MIR_BWLD1C|MIR_BWLF1C|MIR_SCLD1C|MIR_SCLF1C|MIR_BWSD1C|MIR_BWSF1C|MIR_SCSD1C|MIR_SCSF1C)_[0-9]{8}T[0-9]{6}_[0-9]{8}T[0-9]{6}_[0-9]{3}_[0-9]{3}_[0-9]{1}\.zip</drb:nameMatch>
+      </drb:signature>
+   </owl:Class>
+   
+   <!-- ========================================= -->
+   <!-- PRODUCT AUX                               -->
+   <!-- ========================================= -->
+
+   <owl:Class rdf:about="&smos;productAuxZip">
+      <rdfs:label xml:lang="en">SMOS Product AUX (zip Archive)</rdfs:label>
+      <rdfs:comment xml:lang="en">
+      </rdfs:comment>
+      <rdfs:subClassOf rdf:resource="&drb;zip"/>
+      <drb:signature rdf:parseType="Resource">
+         <drb:nameMatch>SM_(TEST|OPER|REPR)_AUX_ECMWF__[0-9]{8}T[0-9]{6}_[0-9]{8}T[0-9]{6}_[0-9]{3}_[0-9]{3}_[0-9]{1}\.zip</drb:nameMatch>
+      </drb:signature>
+   </owl:Class>
+   
+   <owl:Class rdf:about="&smos;productAux">
+      <rdfs:label xml:lang="en">SMOS Product AUX</rdfs:label>
+      <rdfs:comment xml:lang="en">
+      </rdfs:comment>
+      <rdfs:subClassOf rdf:resource="&drb;item"/>
+      <drb:signature rdf:parseType="Resource">
+         <drb:nameMatch>SM_(TEST|OPER|REPR)_AUX_ECMWF__[0-9]{8}T[0-9]{6}_[0-9]{8}T[0-9]{6}_[0-9]{3}_[0-9]{3}_[0-9]{1}</drb:nameMatch>
       </drb:signature>
    </owl:Class>
 
@@ -51,20 +75,6 @@
       <rdfs:subClassOf rdf:resource="&drb;xml-content"/>
       <drb:signature rdf:parseType="Resource">
          <drb:nameMatch>SM_(TEST|OPER|REPR)_.........._[0-9]{8}T[0-9]{6}_[0-9]{8}T[0-9]{6}_[0-9]{3}_[0-9]{3}_[0-9]{1}\.HDR</drb:nameMatch>
-      </drb:signature>
-   </owl:Class>
-
-   <!-- ========================================= -->
-   <!-- PRODUCT AUX                          -->
-   <!-- ========================================= -->
-
-   <owl:Class rdf:about="&smos;productAux">
-      <rdfs:label xml:lang="en">SMOS AUX Product</rdfs:label>
-      <rdfs:comment xml:lang="en">
-      </rdfs:comment>
-      <rdfs:subClassOf rdf:resource="&smos;product"/>
-      <drb:signature rdf:parseType="Resource">
-         <drb:nameMatch>SM_(TEST|OPER|REPR)_AUX_ECMWF__[0-9]{8}T[0-9]{6}_[0-9]{8}T[0-9]{6}_[0-9]{3}_[0-9]{3}_[0-9]{1}\.zip</drb:nameMatch>
       </drb:signature>
    </owl:Class>
 
